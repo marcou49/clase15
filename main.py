@@ -20,11 +20,15 @@ def peluqueria():
 
 @app.route("/portfolio/facebook/")
 def facebook():
+
+    mensaje = "Don't give a shit today, probably won't give a fuck tomorrow."
     return render_template("facebook.html")
 
 @app.route("/about/")
 def about():
+    mensaje = "Tampoco mucho más, sorry"
     return render_template("about.html")
+
 
 
 if __name__ == '__main__':
