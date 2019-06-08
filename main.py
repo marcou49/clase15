@@ -22,13 +22,13 @@ def peluqueria():
 def facebook():
     titulo_pagina = "Face de bouc - Richard Casares"
     mensaje = "Don't give a shit today, probably won't give a fuck tomorrow."
-    return render_template("facebook.html")
+    return render_template("facebook.html",titulo_pagina=titulo_pagina, mensaje=mensaje )
 
 @app.route("/about/")
 def about():
     titulo_pagina = "Sobre mí - Richard Casares"
     mensaje = "Tampoco mucho más, sorry"
-    return render_template("about.html")
+    return render_template("about.html",titulo_pagina=titulo_pagina, mensaje=mensaje)
 
 
 
