@@ -7,7 +7,7 @@ def index():
     return render_template("index.html")
     titulo_pagina = "Inicio - Richard Casares"
     mensaje = "Por aquí poco, utiliza el menú de navegación"
-    return render_template("index",titulo_pagina=titulo_pagina, mensaje=mensaje )
+    return render_template("index.html",titulo_pagina=titulo_pagina, mensaje=mensaje )
 
 @app.route("/portfolio")
 def portfolio():
@@ -20,10 +20,10 @@ def google():
     mensaje = "Scusa, l'ho cancellato"
     return render_template("google.html",titulo_pagina=titulo_pagina, mensaje=mensaje )
 
-
 @app.route("/portfolio/peluqueria/")
 def peluqueria():
-    return render_template("peluqueria.html")
+    titulo_pagina = "Mi peluquería - Richard Casares"
+    return render_template("peluqueria.html",titulo_pagina=titulo_pagina)
 
 @app.route("/portfolio/facebook/")
 def facebook():
