@@ -15,9 +15,8 @@ def portfolio():
 
 @app.route("/portfolio/google/")
 def google():
-    return render_template("google.html")
-    titulo_pagina = "Boogle - Richard Casares"
-    mensaje = "Scusa, l'ho cancellato"
+    titulo_pagina = "Google - Richard Casares"
+    mensaje = "Scusa se lo cancello"
     return render_template("google.html", titulo_pagina=titulo_pagina, mensaje=mensaje )
 
 @app.route("/portfolio/peluqueria/")
