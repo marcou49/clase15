@@ -4,10 +4,10 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return render_template("index.html")
     titulo_pagina = "Inicio - Richard Casares"
-    mensaje = "Por aquí poco, utiliza el menú de navegación"
-    return render_template("index.html", titulo_pagina=titulo_pagina, mensaje=mensaje )
+    mensaje = "Aquí poco, utiliza el menú de navegación"
+    return render_template("index.html",titulo_pagina=titulo_pagina, mensaje=mensaje)
+
 
 @app.route("/portfolio")
 def portfolio():
